@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contactos - Restaurante las Primaveras San Jeronimo</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="productos/logo.png" alt="logo del Restaurante"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+                    <li><a href="http://www.instagram.com/restaurantelasprimaveras?igsh=MzkzaWN0Nmxva3hs">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+    <main>
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron"required placeholder="Ingresa tu nombre y apellido">
+
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico"class="input-padron"required placeholder="Ingresa tu correo electronico">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono"class="input-padron"required placeholder="Ingresa tu numero de telefono">
+
+            <label for="Mensaje"></label>
+            <textarea cols="68" rows="10" id="mensaje" class="input-padron" required placeholder="Deja tu mensaje"></textarea> </textarea>
+            
+            <fieldset>
+
+                <legend>¿Como te contactamos?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                
+                <label for="radio-whatsApp"><input type="radio" name="contacto" value="whatsApp" id="radio-whatsApp"checked>WhatsApp</label>
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>¿En que horario prefiere ser contactado?</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir ofertas?</label>
+            <input type="submit" value="Enviar Formulario" class="enviar">
+
+        </form>
+    </main>
+    <footer>
+        <img class="imagenChef" src="productos/chef.png" alt="logo de una mujer chef">
+        <p class="Copyright">©Copyright Restaurante las Primaveras</p>
+        <p class="año">2024</p>
+    </footer>
+</body>
+</html>
